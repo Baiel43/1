@@ -159,3 +159,6 @@ def product_derail_api_view(request, id):
         product.category_id = serializer.validated_data.get("category")
         product.save()
         return Response(data=ProductSerializer(product).data)
+
+
+# class
